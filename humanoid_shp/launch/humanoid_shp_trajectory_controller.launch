@@ -1,0 +1,15 @@
+<launch>
+  <rosparam file="$(find humanoid_shp)/config/trajectory_control.yaml" command="load"/>
+  <rosparam file="$(find humanoid_shp)/config/humanoid_gazebo_control_params.yaml" command="load"/>
+
+  <node name="humanoid_shp_trajectory_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+	output="screen" ns="/humanoid_shp" args="left_arm_controller
+					  left_leg_controller
+					  left_ankle_controller
+                      right_arm_controller
+					  right_leg_controller
+					  right_ankle_controller
+					  body_controller"/>
+
+
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <node name="humanoid_moveit_exec" pkg="py_script" type="humanoid.py" respawn="false" output="screen">
+  </node>
+</launch>

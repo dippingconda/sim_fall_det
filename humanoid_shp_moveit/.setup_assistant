@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: humanoid_shp
+    relative_path: urdf/humanoid_shp.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/humanoid_shp.srdf
+  CONFIG:
+    author_name: pshyeok
+    author_email: pshyeok@korea.ac.kr
+    generated_timestamp: 1564119912

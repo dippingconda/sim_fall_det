@@ -1,0 +1,33 @@
+controller_list:
+  - name: fake_left_arm_controller
+    joints:
+      - left_shoulder
+      - left_elbow
+  - name: fake_left_wrist_controller
+    joints:
+      []
+  - name: fake_left_leg_controller
+    joints:
+      - left_hip
+      - left_knee
+  - name: fake_left_ankle_controller
+    joints:
+      - left_ankle
+  - name: fake_right_arm_controller
+    joints:
+      - right_shoulder
+      - right_elbow
+  - name: fake_right_wrist_controller
+    joints:
+      []
+  - name: fake_right_leg_controller
+    joints:
+      - right_hip
+      - right_knee
+  - name: fake_right_ankle_controller
+    joints:
+      - right_ankle
+  - name: fake_body_controller
+    joints:
+      - chest
+      - neck

@@ -1,0 +1,4 @@
+<launch>
+  <node package="py_script" name="py_control" type="py_control.py" output="screen">
+  </node>
+</launch>

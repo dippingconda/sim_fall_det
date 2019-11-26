@@ -1,0 +1,34 @@
+<launch>
+  <!-- Launch Gazebo  -->
+  <include file="$(find humanoid_shp)/launch/humanoid_shp.launch" />   
+
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find humanoid_shp)/config/humanoid_gazebo_control.yaml" command="load"/>
+  <rosparam file="$(find humanoid_shp)/config/humanoid_gazebo_control_params.yaml" command="load"/>
+
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+	output="screen" ns="/humanoid_shp" args="joint_state_controller
+					  joint_chest_position_controller
+					  joint_Lankle_position_controller
+					  joint_Lelbow_position_controller
+					  joint_Lhip_position_controller
+					  joint_Lknee_position_controller
+					  joint_Lshoulder_position_controller
+					  joint_neck_position_controller
+					  joint_Rankle_position_controller
+					  joint_Relbow_position_controller
+					  joint_Rhip_position_controller
+					  joint_Rknee_position_controller
+					  joint_Rshoulder_position_controller"/>
+
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+	respawn="false" output="screen">
+    <remap from="/joint_states" to="/humanoid_shp/joint_states" />
+  </node>
+
+</launch>

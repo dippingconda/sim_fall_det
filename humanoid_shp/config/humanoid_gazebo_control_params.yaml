@@ -1,0 +1,109 @@
+gazebo_ros_control/pid_gains:
+      chest:
+        p: 2000
+        i: 10
+        d: 200
+      left_ankle:
+        p: 2300
+        i: 20
+        d: 100
+      left_elbow:
+        p: 2000
+        i: 5
+        d: 100
+      left_hip:
+        p: 2500
+        i: 80
+        d: 200
+      left_knee:
+        p: 2500
+        i: 80
+        d: 100
+      left_shoulder:
+        p: 2000
+        i: 5
+        d: 100
+      neck:
+        p: 2000
+        i: 5
+        d: 100
+      right_ankle:
+        p: 2300
+        i: 20
+        d: 100
+      right_elbow:
+        p: 2000
+        i: 5
+        d: 100
+      right_hip:
+        p: 2500
+        i: 80
+        d: 200
+      right_knee:
+        p: 2500
+        i: 80
+        d: 100
+      right_shoulder:
+        p: 2000
+        i: 5
+        d: 100
+#joint_chest_position_controller/pid_gains:
+#      chest:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Lankle_position_controller/pid_gains:
+#      left_ankle:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Lelbow_position_controller/pid_gains:
+#      left_elbow:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Lhip_position_controller/pid_gains:
+#      left_hip:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Lknee_position_controller/pid_gains:
+#      left_knee:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Lshoulder_position_controller/pid_gains:
+#      left_shoulder:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_neck_position_controller/pid_gains:
+#      neck:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Rankle_position_controller/pid_gains:
+#      right_ankle:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Relbow_position_controller/pid_gains:
+#      right_elbow:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Rhip_position_controller/pid_gains:
+#      right_hip:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Rankle_position_controller/pid_gains:
+#      right_knee:
+#        p: 100
+#        d: 10
+#        i: 0.01
+#joint_Rshoulder_position_controller/pid_gains:
+#      right_shoulder:
+#        p: 100
+#        d: 10
+#        i: 0.01

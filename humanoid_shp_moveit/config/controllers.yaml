@@ -1,0 +1,49 @@
+controller_manager_ns: controller_manager
+controller_list:
+  - name: humanoid_shp/left_arm_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - left_shoulder
+      - left_elbow
+  - name: humanoid_shp/left_leg_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - left_hip
+      - left_knee
+  - name: humanoid_shp/left_ankle_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - left_ankle
+  - name: humanoid_shp/right_arm_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - right_shoulder
+      - right_elbow
+  - name: humanoid_shp/right_leg_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - right_hip
+      - right_knee
+  - name: humanoid_shp/right_ankle_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - right_ankle
+  - name: humanoid_shp/body_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - chest
+      - neck

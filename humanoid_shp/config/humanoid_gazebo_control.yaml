@@ -1,0 +1,123 @@
+humanoid_shp:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  joint_chest_position_controller:
+    type: position_controllers/JointPositionController
+    joint: chest
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  #  gains:
+  #    chest:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  joint_Lankle_position_controller:
+    type: position_controllers/JointPositionController
+    joint: left_ankle
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Lelbow_position_controller:
+    type: position_controllers/JointPositionController
+    joint: left_elbow
+  #  gains:
+  #    left_elbow:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Lhip_position_controller:
+    type: position_controllers/JointPositionController
+    joint: left_hip
+  #  gains:
+  #    left_hip:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Lknee_position_controller:
+    type: position_controllers/JointPositionController
+    joint: left_knee
+  #  gains:
+  #    left_knee:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Lshoulder_position_controller:
+    type: position_controllers/JointPositionController
+    joint: left_shoulder
+  #  gains:
+  #    left_shoulder:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_neck_position_controller:
+    type: position_controllers/JointPositionController
+    joint: neck
+  #  gains:
+  #    neck:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Rankle_position_controller:
+    type: position_controllers/JointPositionController
+    joint: right_ankle
+  #  gains:
+  #    right_ankle:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Relbow_position_controller:
+    type: position_controllers/JointPositionController
+    joint: right_elbow
+  #  gains:
+  #    right_elbow:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Rhip_position_controller:
+    type: position_controllers/JointPositionController
+    joint: right_hip
+  #  gains:
+  #    right_hip:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Rknee_position_controller:
+    type: position_controllers/JointPositionController
+    joint: right_knee
+  #  gains:
+  #    right_knee:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_Rshoulder_position_controller:
+    type: position_controllers/JointPositionController
+    joint: right_shoulder
+  #  gains:
+  #    right_shoulder:
+  #      p: 100
+  #      d: 1
+  #      i: 1
+  #      i_clamp: 1
+  #  pid: {p: 100.0, i: 0.01, d: 10.0}
+
+ 

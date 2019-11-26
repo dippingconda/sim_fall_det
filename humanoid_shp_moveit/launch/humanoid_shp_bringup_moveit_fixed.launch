@@ -1,0 +1,26 @@
+<launch>
+  <!-- Launch Gazebo  -->
+  <include file="$(find humanoid_shp)/launch/humanoid_shp_fixed.launch" />   
+
+  <!-- ros_control: joint_state_controller-->
+  <include file="$(find humanoid_shp)/launch/humanoid_shp_states.launch"/>
+ 
+  <!-- ros_control: position_controller-->
+  <!--include file="$(find humanoid_shp)/launch/humanoid_shp_position.launch"-->
+ 
+  <!-- ros_control trajectory control dof arm launch file -->
+  <include file="$(find humanoid_shp)/launch/humanoid_shp_trajectory_controller.launch" />    
+
+  <!-- moveit launch file -->
+  <include file="$(find humanoid_shp_moveit)/launch/moveit_planning_execution.launch" />
+  
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+
+  <!-- Starting robot state publish which will publish tf -->
+  <!--node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" -->
+
+  <!-- humanoid python script launch file -->
+  <!--include file="$(find py_script)/launch/py_script.launch" -->
+
+  <!--node name="humanoid_py_script" pkg="py_script" type="humanoid.py"-->
+</launch>

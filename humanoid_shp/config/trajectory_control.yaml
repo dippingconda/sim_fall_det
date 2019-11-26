@@ -1,0 +1,53 @@
+humanoid_shp:
+  left_arm_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - left_shoulder
+      - left_elbow
+    gains:
+      left_shoulder:      {p: 100.0, i: 1, d: 1, i_clamp: 1.0}
+      left_elbow:  {p: 100.0, i: 1.0, d: 1, i_clamp: 1.0}
+  left_leg_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - left_hip
+      - left_knee
+    gains:
+      left_hip:  {p: 100.0, i: 1.0, d: 1, i_clamp: 1.0}
+      left_knee:      {p: 100.0, i: 1, d: 1, i_clamp: 1.0}
+  left_ankle_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - left_ankle
+    gains:
+      left_ankle:  {p: 100.0, i: 1.0, d: 1, i_clamp: 1.0}
+  right_arm_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - right_shoulder
+      - right_elbow
+    gains:
+      right_shoulder:      {p: 100.0, i: 1, d: 1, i_clamp: 1.0}
+      right_elbow:  {p: 100.0, i: 1.0, d: 1, i_clamp: 1.0}
+  right_leg_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - right_hip
+      - right_knee
+    gains:
+      right_hip:  {p: 100.0, i: 1.0, d: 1, i_clamp: 1.0}
+      right_knee:      {p: 100.0, i: 1, d: 1, i_clamp: 1.0}
+  right_ankle_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - right_ankle
+    gains:
+      right_ankle:  {p: 100.0, i: 1.0, d: 1, i_clamp: 1.0}
+  body_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - chest
+      - neck
+    gains:
+      chest:  {p: 100.0, i: 1.0, d: 1, i_clamp: 1.0}
+      neck:      {p: 100.0, i: 1, d: 1, i_clamp: 1.0}
